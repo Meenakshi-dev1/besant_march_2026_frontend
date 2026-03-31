@@ -147,6 +147,13 @@ Pseudo-elements - keyword added after a slector that used to style specific part
 
 pagenation 
 
+dropdown 
+
+Image gallery 
+
+flexbox
+
+
 
 
 
