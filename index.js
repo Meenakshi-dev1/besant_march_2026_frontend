@@ -869,3 +869,144 @@
 
 // console.log(squares);
 
+
+// const person1 = {
+
+//     // firstName: "Ganesh",
+//     // lastname: "kumar",
+//     // age: 27,
+//     // isEmployee: true,
+
+//     // sayHelloo: () =>  {console.log("Hai iam ganesh kumar")},
+//     // eat: () => {console.log("I am eating sambar rice")}
+
+
+//     name: "Ganesh",
+//     favFood: "sambar rice",
+//    sayHelloo: function(){console.log(`Hi i am ${this.name}`)},
+//    eat: function() {console.log(`I am eating ${this.favFood}`)}
+
+// }
+// const person2 = {
+
+//     // firstName: "Ganesh",
+//     // lastname: "kumar",
+//     // age: 27,
+//     // isEmployee: true,
+
+//     // sayHelloo: () =>  {console.log("Hai iam ganesh kumar")},
+//     // eat: () => {console.log("I am eating sambar rice")}
+
+
+//     name: "aslam",
+//     favFood: "tomwato rice",
+//    sayHelloo: function(){console.log(`Hi i am ${this.name}`)},
+//    eat: function() {console.log(`I am eating ${this.favFood}`)}
+
+// }
+// const person2 = {
+
+//     firstName: "Mohamed",
+//     lastname: "aslam",
+//     age: 22,
+//     isEmployee: false,
+
+//       sayHelloo: () =>  {console.log("Hai iam aslam")},
+//       eat: () => {console.log("I am eating tomato rice")}
+
+// }
+
+// console.log(this);
+// person1.sayHelloo();
+// person1.eat();
+// person2.sayHelloo();
+// person2.eat();
+// console.log(person1.lastname);
+// console.log(person1.isEmployee);
+// console.log(person1.age);
+
+
+// console.log(person2.firstName);
+// console.log(person2.lastname);
+// console.log(person2.isEmployee);
+// console.log(person2.age);
+// person1.sayHelloo();
+// person1.eat();
+
+// person2.sayHelloo();
+// person2.eat();
+
+
+
+// function Car(make, year, color, model) {
+
+//     this.make = make,
+//     this.model = model,
+//     this.year = year,
+//     this.color = color,
+//     this.drive = function(){console.log(`you drive ${this.model}`)}
+
+// }
+
+
+// const car1 = new Car("tata", "2024", " red", "altroz");
+// const car2 = new Car("maruthi", "2026", "black", "swift");
+// const car3 = new Car("tata", "2026", "white", "safari");
+// const car4 = new Car("bmw", "2026", "purple", "gt");
+
+// console.log(car1.make);
+// console.log(car1.model);
+// console.log(car1.color);
+// console.log(car1.year);
+
+// console.log(car2.make);
+// console.log(car2.model);
+// console.log(car2.color);
+// console.log(car2.year);
+
+// console.log(car3.make);
+// console.log(car3.model);
+// console.log(car3.color);
+// console.log(car3.year);
+
+// console.log(car4.make);
+// console.log(car4.model);
+// console.log(car4.color);
+// console.log(car4.year);
+
+
+// car1.drive();
+// car2.drive();
+
+class Product {
+
+    constructor(name, price) {
+      this.name = name;   
+      this.price = price;
+    }
+    
+
+    displayProduct = function() {
+        console.log(`Product: ${this.name}`);
+        console.log(`price ${this.price.toFixed(2)}`);
+    }
+
+    calculateTotal = function(salexTax) {
+        return this.price + (this.price * salesTax)
+    }
+ 
+}
+
+const salesTax = 0.05;
+
+const product1 = new Product("Shirt", 300.34);
+const product2 = new Product("Pant", 500.34);
+const product3 = new Product("tshirt", 150.34);
+
+product1.displayProduct();
+product2.displayProduct();
+product3.displayProduct();
+
+const total = product3.calculateTotal(salesTax);
+
+console.log(`Total price with tax ${total.toFixed(2)}`);
